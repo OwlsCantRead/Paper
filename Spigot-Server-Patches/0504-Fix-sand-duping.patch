@@ -15,9 +15,9 @@ index f5cd0c6e3b6d375fb227802e3620dab52f0f4de4..492a4cf1a8b1a26624b093d7f6946bfd
      @Override
      public void tick() {
 +        // Paper start - fix sand duping
-+        if (this.dead) {
-+            return;
-+        }
++        //if (this.dead) {
++            //return;
++        //}
 +        // Paper end - fix sand duping
          if (this.block.isAir()) {
              this.die();
@@ -27,9 +27,9 @@ index f5cd0c6e3b6d375fb227802e3620dab52f0f4de4..492a4cf1a8b1a26624b093d7f6946bfd
              this.move(EnumMoveType.SELF, this.getMot());
  
 +            // Paper start - fix sand duping
-+            if (this.dead) {
-+                return;
-+            }
++            //if (this.dead) {
++                //return;
++            //}
 +            // Paper end - fix sand duping
 +
              // Paper start - Configurable EntityFallingBlock height nerf
